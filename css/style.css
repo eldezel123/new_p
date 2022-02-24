@@ -10,13 +10,14 @@ body {
 }
 
 /* ~~ Element/tag selectors ~~ */
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+ul, ol, dl { 
 	padding: 0;
 	margin: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	margin-top: 0;	 
+	padding-right: 15px; 
+	
 }
 h5 {
 	color: #444;
@@ -28,19 +29,21 @@ h5 {
 a {
 	outline: none;
 }
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+a img { 
 	border: none;
 }
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
-	color: #42413C;
-	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	color: #000000;
+	text-decoration: none;
+	font-size: large;
+	
 }
 a:visited {
 	color: #6E6C64;
 	text-decoration: underline;
 }
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+a:hover, a:active, a:focus { 
 	text-decoration: none;	
 }
 .wrapper {
@@ -55,26 +58,21 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding-bottom: 100px;
 }
 
-/* ~~ This is the layout information. ~~ 
-
-1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
-
-*/
 .content {
 
 	padding: 10px 0;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+.fltrt {  /* this class can be used to float an element right in your page. */
 	float: right;
 	margin-left: 8px;
 }
-.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+.fltlft { /* this class can be used to float an element left in your page. */
 	float: left;
 	margin-right: 8px;
 }
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+.clearfloat { 
 	clear:both;
 	height:0;
 	font-size: 1px;
@@ -89,14 +87,20 @@ h4 {
 	font-size: 18px;
 }
 #logo {
+	grid-area: logo;
 	position: absolute;
 	width: 200px;
 	height: 200px;
-
+	font-size: xxx-large;
+	position: absolute;
+	top: -25px;
+	left: 150px;
+	color: rebeccapurple;
 }
 #header {
 	height: 80px;
-	border-bottom: 1px solid #666666;
+	border-bottom: 2px solid #210099;
+	grid-template-columns: repeat(10, 1fr);
 }
 #columnLeft {
 	float: left;
@@ -104,7 +108,8 @@ h4 {
 	margin-right: 0;
 }
 #columnRight {
-	margin-left: 234px;
+	margin-left: 22px;
+	margin-right: 21px;
 }
 .home #columnRight {
 	margin-bottom: -20px;
@@ -112,7 +117,7 @@ h4 {
 #menu {
 	list-style-type: none;
 	padding-top: 23px;
-	margin-left: 144px;
+	margin-left: 203px;
 }
 #menu li {
 	float: left;
@@ -125,18 +130,25 @@ h4 {
 }
 #menu li.divline {
 	padding: 0;
-	border-right: thin solid gray;
+	border-right: thin solid #210099;
 	height: 8px;
 	margin: 26px 0 0;
 }
 #main {
 	margin-top: 50px;
 	font-size: 12px;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 #mainLeft {
 	width: 280px;
 	font-size: 16px;
 	float: left;
+	height: 550px;
+	overflow-y: scroll;
+	margin-left: -19px;
+	border-right: #663399 solid 2px;
 }
 .home #mainLeft img {
 	padding-top: 30px;
@@ -158,16 +170,20 @@ h4 {
 
 }
 #mainLeft .text {
-	margin-top: 20px;
+	margin-top: 10px;
 	float: none;
 	margin-bottom: 60px;
 }
 #mainRight {
-	margin-left: 293px;
+	margin-left: 279px;
+    margin-top: -30px;
+	background: rgba(100, 8, 221, 0.123)
+	no-repeat center center fixed;
+	background-size: cover;
+	color: black;
+	
 }
-.home #mainRight {
-	padding-left: 40px;
-}
+
 .about #mainRight {
 	margin-left: 254px;
 }
@@ -427,7 +443,7 @@ iframe.web {
 }
 #contact {
 	float: right;
-	text-align: right;
+	text-align: left;
 }
 .projectform #contactFormBox {
 	background-color: #f1f1f1;
@@ -599,4 +615,14 @@ input.file {
 	filter:alpha(opacity 0);
 	opacity: 0;
 	z-index: 2;
+}
+li .Youtube:hover {
+	color: #000 !important;
+}
+#mainRight hr {
+	width: 2px;
+}
+#mainRight p {
+	opacity: 1 !important;
+	color: #000;
 }
