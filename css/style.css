@@ -446,6 +446,7 @@ iframe.web {
 #contact {
 	float: right;
 	text-align: left;
+	margin-right: 98px;
 }
 .projectform #contactFormBox {
 	background-color: #f1f1f1;
