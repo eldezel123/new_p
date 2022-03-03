@@ -187,7 +187,7 @@ h4 {
 #mainRight {
 	margin-left: 279px;
     margin-top: -30px;
-	background: #eee
+	background: white
 	no-repeat center center fixed;
 	background-size: cover;
 	color: black;
@@ -446,7 +446,6 @@ iframe.web {
 #contact {
 	float: right;
 	text-align: left;
-	margin-right: 98px;
 }
 .projectform #contactFormBox {
 	background-color: #f1f1f1;
@@ -755,7 +754,7 @@ li .Youtube:hover {
 	text-decoration: underline;
 }
 .essam_footer {
-	margin-top: 40px;
+	margin-top: 26px;
 	font-size: 17px;
 	color: #999999;
 	cursor: context-menu;
@@ -776,4 +775,29 @@ div .tab {
 	font-size: x-large !important;
 	text-align: center !important;
 	color: red !important;
+}
+#h6 {
+	text-align: center;
+	margin-top: 2px;
+	color: rebeccapurple;
+	font-size: large;
+}
+#js {
+	display: block;
+    width: 265px;
+    height: 37px;
+    background-color: #9fef7a;
+    border-radius: 17px;
+    font-size: initial;
+}
+#bla {
+	text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rebeccapurple !important;
+    position: relative;
+    top: 179px;
+}
+#homepage {
+	text-decoration: none !important;
 }
