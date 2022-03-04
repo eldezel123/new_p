@@ -801,3 +801,18 @@ div .tab {
 #homepage {
 	text-decoration: none !important;
 }
+#text_side {
+    font-size: larger;
+    font-weight: bold;
+    color: red !important;
+    display: inline;
+}
+#mylink {
+	font-size: inherit;
+	color: rebeccapurple;
+	text-decoration: none !important;
+}
+#mylink:hover {
+	color: red;
+	cursor: pointer;
+}
