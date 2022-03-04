@@ -779,9 +779,10 @@ div .tab {
 }
 #h6 {
 	text-align: center;
-	margin-top: 2px;
+	margin-top: 57px;
 	color: rebeccapurple;
-	font-size: large;
+	font-size: x-large;
+
 }
 #js {
 	display: block;
@@ -791,6 +792,8 @@ div .tab {
     border-radius: 17px;
     font-weight: bold;
 	font-size: large;
+	position: relative;
+	left: 293px;
 }
 #bla {
 	text-align: center;
