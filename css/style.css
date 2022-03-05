@@ -836,4 +836,8 @@ div .tab {
 	border-radius: 13px;
 	border: black 2px solid;
 	line-height: 40px;
+	font-size: large;
+}
+#ahome:hover {
+	cursor: pointer;
 }
