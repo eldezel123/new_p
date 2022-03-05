@@ -841,3 +841,7 @@ div .tab {
 #ahome:hover {
 	cursor: pointer;
 }
+#hr_link {
+	background: #7441c5 ;
+    	height: 2px;
+}
