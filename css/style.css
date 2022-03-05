@@ -834,5 +834,6 @@ div .tab {
 	height: 42px;
 	text-decoration: none !important;
 	border-radius: 13px;
+	border: black 2px solid;
 	line-height: 40px;
 }
