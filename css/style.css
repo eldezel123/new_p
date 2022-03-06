@@ -788,7 +788,8 @@ div .tab {
 	display: block;
     width: 265px;
     height: 37px;
-    background-color: #bc83ff;
+    background-color: #0d0093;
+	color: yellow;
     border-radius: 17px;
     font-weight: bold;
 	font-size: large;
